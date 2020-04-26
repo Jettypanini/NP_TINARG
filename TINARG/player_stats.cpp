@@ -6,13 +6,12 @@ Player_Stats::Player_Stats()
 
 }
 
-void Player_Stats::Add_Players(std::string new_name, std::string new_passwd)
+void Player_Stats::Add_Players(std::string new_name)
 {
     stats * temp;
     temp = new stats;
 
     temp->name = new_name;
-    temp->passwd = new_passwd;
     temp->lvl = 1;
     temp->stage = 1;
     temp->health = 1;
@@ -36,9 +35,10 @@ void Player_Stats::Print_Players()
 {
     stats * temp = head;
 
-    while( temp != nullptr )
+    while( temp->next != nullptr )
     {
-        std::cout << temp->name << "\t Password: " << temp->passwd << std::endl;
+        std::cout << temp->name << std::endl;
+        std::cout << temp->next->name << std::endl;
         temp = temp->next;
     }
 }

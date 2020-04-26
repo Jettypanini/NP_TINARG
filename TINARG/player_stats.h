@@ -8,14 +8,13 @@ class Player_Stats
 {
 public:
     Player_Stats(  );
-    void Add_Players( std::string new_name, std::string new_passwd );
+    void Add_Players( std::string new_name );
     void Print_Players();
     bool Find_Player( std::string player_name );
 private:
     struct stats
     {
         std::string name;
-        std::string passwd;
         short stage;
         short lvl;
         short exp;
