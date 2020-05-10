@@ -19,8 +19,8 @@ private:
     void * context;
     void * context_2;
 
-    char subs[15] = "TINARG>action>";
-    char send_Message[256] = "TINARG>reaction>" ;
+    std::string subs = "TINARG>action>";
+    std::string send_Message;
     char recv_Message[256];
     int length, i;
 

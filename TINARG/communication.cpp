@@ -9,7 +9,7 @@ Communication::Communication()
     context_2 = zmq_ctx_new();
     subscriber = zmq_socket( context_2, ZMQ_SUB );
     zmq_connect( subscriber, "tcp://benternet.pxl-ea-ict.be:24042" );
-    zmq_setsockopt( subscriber, ZMQ_SUBSCRIBE, subs, strlen(subs) );
+    zmq_setsockopt( subscriber, ZMQ_SUBSCRIBE, subs.c_str(), subs.length() );
 }
 
 Communication::~Communication()
@@ -38,12 +38,14 @@ void Communication::Recv_Message()
 
 void Communication::Send_Message( std::string data, std::string name_client )
 {
-    strcpy( send_Message, "TINARG>reaction>" );
-    strcat( send_Message, name_client.c_str() );
-    strcat( send_Message, ">" );
-    strcat( send_Message, data.c_str() );
-    strcat( send_Message, ">" );
-    zmq_send( pusher, send_Message, sizeof(send_Message), 0 );
+    send_Message.clear();
+    send_Message = "TINARG>reaction>";
+    send_Message.append( name_client );
+    send_Message.append( ">" );
+    send_Message.append( data );
+    send_Message.append( ">" );
+    send_Message.append( "\0" );
+    zmq_send( pusher, send_Message.c_str(), send_Message.length(), 0 );
 }
 
 std::string Communication::Get_Name()

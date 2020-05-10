@@ -2,9 +2,13 @@
 #define TINARG_H
 
 #include "communication.h"
+#include "statistics.h"
+#include "commands.h"
 
 #include <iostream>
 #include <string>
+#include <map>
+#include <iterator>
 
 class TINARG
 {
@@ -13,9 +17,17 @@ public:
     void Start_Game();
 private:
     Communication *Talk;
+    Commands *Command;
+    std::map<std::string, Statistics*> stats;
+
+    std::map<std::string, Statistics*>::iterator it;
 
     std::string name_recv;
     std::string message_recv;
+    std::string message_appended;
+
+    short pos;
+    short dice;
 };
 
 #endif // TINARG_H
