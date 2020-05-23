@@ -20,10 +20,16 @@ logout
 
 `login`: Het eerste commando dat moet ingevuld worden. Hierbij betreedt u het spel en werken alle andere commando's.
 Als u al ingelogd bent, zal de service dit ook laten weten.
+
 `shutdown`: Dit sluit de service af. Dan stopt het helemaal. 
 Dit commando werkt enkel als speler Jethro (That's me) het ingeeft.
+
 `List players`: Toont alle ingelogde spelers.
+
 `get position`: Toont uw huidige positie op het spelbord.
+
 `get level`: Toont het level dat u op dat moment heeft.
+
 `roll dice`: Rol de dobbelsteen en krijg een nieuwe positie.
+
 `logout`: Hierbij verlaat u het spel.
