@@ -5,6 +5,12 @@
 Om dit spel te kunnen spelen, moet u de client gebruiken.
 Eerst moet u uw naam geven, zodat de service weet wie u bent.
 
+De bedoeling is om met de dobbelsteen te gooien en vooruitgang maken. Meer zoals een ganzenbord, dus zeker geen runescape. 
+Op verschillende vakjes staan vijanden. Deze moeten verslaan worden om level up te gaan, zodat de boss van dit level verslaan kan worden.
+Nog niet het verhoopte level om de boss te verslaan? Ga dan terug naar de start van dit level.
+
+In dit spel hoeven de spelers geen beurt af te wachten. Het wordt wel moeilijker per level.
+
 U kan de volgende commando's gebruiken in het spel:
 
 ```
