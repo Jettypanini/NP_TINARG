@@ -18,16 +18,15 @@ public:
 private:
     Communication *Talk;
     Commands *Command;
-    std::map<std::string, Statistics*> stats;
 
+    std::map<std::string, Statistics*> stats;
     std::map<std::string, Statistics*>::iterator it;
 
     std::string name_recv;
     std::string message_recv;
     std::string message_appended;
 
-    short pos;
-    short dice;
+    short pos, dice, i;
 };
 
 #endif // TINARG_H

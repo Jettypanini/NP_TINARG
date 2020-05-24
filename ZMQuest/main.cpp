@@ -4,7 +4,7 @@
 #include <string.h>
 #include <string>
 
-void * context; //Global context, because you only need one !
+void * context;
 void * context_2;
 
 int main( int argc, char * argv[] )
@@ -14,7 +14,7 @@ int main( int argc, char * argv[] )
 
     std::string send_Message;
     char recv_Message[256];
-    int length_recv, length_send, i;
+    int length_recv;
     std::string s;
     std::string name;
     std::string msg_recv;
@@ -80,6 +80,10 @@ int main( int argc, char * argv[] )
             msg_recv.erase(0, msg_recv.find(">") + 1);
             message = msg_recv.substr( 0, msg_recv.find(">") );
             std::cout << message << std::endl << std::endl;
+            if( message == "Bye!" or message == "The server is now closing!" )
+            {
+                break;
+            }
         }
     }
 
