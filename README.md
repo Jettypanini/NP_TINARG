@@ -13,9 +13,7 @@ Op de onderstaande afbeelding is te zien hoe het speelveld van het eerste level 
 
 Uiteindelijk bij level 20 is er de eerste boss. Deze kan enkel verslaan worden op level 10. Als dit niet bereikt is, moet de speler terug naar vakje 11.
 
-```
 <p align="center"><img src="Untitled Diagram.png"></p>
-```
 
 In dit spel hoeven de spelers geen beurt af te wachten. Het wordt wel moeilijker per level.
 
