@@ -9,6 +9,12 @@ De bedoeling is om met de dobbelsteen te gooien en vooruitgang maken. Meer zoals
 Op verschillende vakjes staan vijanden. Deze moeten verslaan worden om level up te gaan, zodat de boss van dit level verslaan kan worden.
 Nog niet het verhoopte level om de boss te verslaan? Ga dan terug naar de start van dit level.
 
+Op de onderstaande afbeelding is te zien hoe het speelveld van het eerste level eruit zou zien (Geen beelden van de echte gameplay). In de eerste paar vakjes en verder om de 2 vakjes zitten vijanden verscholen. Op vakje 10 zit een minibaas. Bij smurfette krijgt u 2 levels erbij.
+
+Uiteindelijk bij level 20 is er de eerste boss. Deze kan enkel verslaan worden op level 10. Als dit niet bereikt is, moet de speler terug naar vakje 11.
+
+<p align="center"><img src="Untitled Diagram.png"></p>
+
 In dit spel hoeven de spelers geen beurt af te wachten. Het wordt wel moeilijker per level.
 
 U kan de volgende commando's gebruiken in het spel:
