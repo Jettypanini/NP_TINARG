@@ -11,7 +11,7 @@ Nog niet het verhoopte level om de boss te verslaan? Ga dan terug naar de start 
 
 Op de onderstaande afbeelding is te zien hoe het speelveld van het eerste level eruit zou zien (Geen beelden van de echte gameplay). In de eerste paar vakjes en verder om de 2 vakjes zitten vijanden verscholen. Op vakje 10 zit een minibaas. Bij smurfette krijgt u 2 levels erbij.
 
-Uiteindelijk bij level 20 is er de eerste boss. Deze kan enkel verslaan worden op level 10. Als dit niet bereikt is, moet de speler terug naar vakje 11.
+Uiteindelijk bij level 20 is er de eerste boss. Deze kan enkel verslaan worden op level 10. Als dit niet bereikt is, moet de speler terug naar vakje 11. Bij het verslaan van de boss, krijgt de speler een trofee. 
 
 <p align="center"><img src="Untitled Diagram.png"></p>
 
