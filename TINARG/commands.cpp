@@ -9,6 +9,7 @@ Commands::Commands()
     Commands_List["roll dice"] = 4;
     Commands_List["logout"] = 5;
     Commands_List["get level"] = 6;
+    Commands_List["chat"] = 7;
 }
 
 short Commands::Dice()

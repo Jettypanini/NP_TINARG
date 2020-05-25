@@ -81,9 +81,14 @@ void TINARG::Start_Game()
             {
                 Talk->Send_Message( std::to_string( stats[name_recv]->Get_lvl() ), name_recv );
             }
+            else if( message_recv == Command->Get_Command(7) )
+            {
+                Talk->Send_Chat( Talk->Get_Chat(), Talk->Get_Listener(), name_recv );
+                Talk->Send_Message( "Sent!", name_recv );
+            }
             else
             {
-                for( i = 0; i <= 6; i++ )
+                for( i = 0; i <= 7; i++ )
                 {
                     message_appended.append(Command->Get_Command( i ));
                     message_appended.append("\n");
