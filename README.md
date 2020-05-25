@@ -27,6 +27,7 @@ get position
 get level
 roll dice
 logout
+chat
 
 ```
 
@@ -45,3 +46,5 @@ Dit commando werkt enkel als speler Jethro (That's me) het ingeeft.
 `roll dice`: Rol de dobbelsteen en krijg een nieuwe positie.
 
 `logout`: Hierbij verlaat u het spel.
+
+`chat`: Bij de command chat hoort altijd >[Naam ontvanger]>[Boodschap]. Anders werkt deze niet en stuurt de service, letterlijk, niets naar niemand. Voorbeeld: chat>Jethro>Hello world!
