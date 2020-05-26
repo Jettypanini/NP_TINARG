@@ -53,8 +53,7 @@ Dit commando werkt enkel als speler Jethro (That's me) het ingeeft.
 
 De ingegeven commando's worden automatisch op een bepaalde topic geplaatst en op de broker verzonden. Als login wordt ingegeven is dit dus `TINARG>Action>[Naam speler]>login>`.
 
-De service subscribet dan op TINARG>Action en stuurt diens bericht dan terug als 
-`TINARG>Reaction>[Naam speler]>[Terugkomend bericht]>`.
+De service subscribet dan op TINARG>Action en stuurt diens bericht dan terug als `TINARG>Reaction>[Naam speler]>[Terugkomend bericht]>`.
 
 Wanneer de client het commando `chat` gebruikt, zal de service naar het TINARG>Reaction bericht ook naar de genoemde speler het bericht sturen. Dit wordt dan `TINARG>chat!>[Naam ontvanger]>[Naam verzender]>[Bericht]>`
 
