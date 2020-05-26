@@ -48,3 +48,13 @@ Dit commando werkt enkel als speler Jethro (That's me) het ingeeft.
 `logout`: Hierbij verlaat u het spel.
 
 `chat`: Bij de command chat hoort altijd >[Naam ontvanger]>[Boodschap]. Anders werkt deze niet en stuurt de service, letterlijk, niets naar niemand. Voorbeeld: chat>Jethro>Hello world!
+
+## Samenstelling commando's
+
+De ingegeven commando's worden automatisch op een bepaalde topic geplaatst en op de broker verzonden. Als login wordt ingegeven is dit dus `TINARG>Action>[Naam speler]>login>`.
+
+De service subscribet dan op TINARG>Action en stuurt diens bericht dan terug als `TINARG>Reaction>[Naam speler]>[Terugkomend bericht]>`.
+
+Wanneer de client het commando `chat` gebruikt, zal de service naar het TINARG>Reaction bericht ook naar de genoemde speler het bericht sturen. Dit wordt dan `TINARG>chat!>[Naam ontvanger]>[Naam verzender]>[Bericht]>`
+
+Hiervoor doet de client aan multithreading. Op een constant runnende task speelt deze het spel en gebruikt de topics `Action` en `Reaction`. Op de andere constant runnende task zal deze dan de chatberichten ontvangen. Hierbij wordt hier op de topic `chat!` subscribed.
