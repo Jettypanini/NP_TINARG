@@ -18,10 +18,12 @@ public:
     std::string Get_Message();
     std::string Get_Listener();
     std::string Get_Chat();
+    std::string Get_Victim();
 private:
     void * context;
     void * context_2;
     void * context_3;
+    void * context_4;
 
     std::string subs = "TINARG>action>";
     std::string send_Message;
@@ -33,6 +35,7 @@ private:
     void * pusher;
     void * subscriber;
     void * chatter;
+    void * smitter;
 
     std::string msg_recv;
     std::string delim = ">";
@@ -40,6 +43,7 @@ private:
     std::string message;
     std::string listener;
     std::string chat_msg;
+    std::string smite_victim;
 };
 
 #endif // COMMUNICATION_H

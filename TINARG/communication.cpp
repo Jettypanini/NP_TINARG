@@ -20,10 +20,14 @@ Communication::~Communication()
 {
     zmq_close( pusher );
     zmq_close( subscriber );
+    zmq_close( chatter );
+    zmq_close( smitter );
     zmq_ctx_shutdown( context );
     zmq_ctx_term( context );
     zmq_ctx_shutdown( context_2 );
     zmq_ctx_term( context_2 );
+    zmq_ctx_shutdown( context_3 );
+    zmq_ctx_term( context_3 );
 }
 
 void Communication::Recv_Message()
@@ -44,6 +48,11 @@ void Communication::Recv_Message()
         listener = msg_recv.substr( 0, msg_recv.find(">") );
         msg_recv.erase(0, msg_recv.find(">") + 1);
         chat_msg = msg_recv.substr( 0, msg_recv.find(">") );
+    }
+    else if( message == "smite" )
+    {
+        msg_recv.erase(0, msg_recv.find(">") + 1);
+        smite_victim = msg_recv.substr( 0, msg_recv.find(">") );
     }
 }
 
@@ -92,3 +101,10 @@ std::string Communication::Get_Chat()
 {
     return chat_msg;
 }
+
+std::string Communication::Get_Victim()
+{
+    return smite_victim;
+}
+
+

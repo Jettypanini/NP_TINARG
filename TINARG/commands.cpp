@@ -10,6 +10,8 @@ Commands::Commands()
     Commands_List["logout"] = 5;
     Commands_List["get level"] = 6;
     Commands_List["chat"] = 7;
+    Commands_List["smite"] = 8;
+    Commands_List["attack"] = 9;
 }
 
 short Commands::Dice()

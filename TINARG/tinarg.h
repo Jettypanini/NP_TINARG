@@ -25,7 +25,9 @@ private:
     std::string name_recv;
     std::string message_recv;
     std::string message_appended;
+    std::string attack_victim;
 
+    bool found;
     short pos, dice, i;
 };
 
